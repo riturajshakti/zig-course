@@ -1,0 +1,44 @@
+# Zig build artifacts
+.zig-cache/
+zig-cache/
+zig-out/
+
+# Compiled output.
+# Note: `zig build-exe foo.zig` drops a bare EXTENSIONLESS binary named `foo`
+# beside the source. git cannot pattern-match that without also hiding files
+# like LICENSE or Makefile, so prefer `zig run` (leaves nothing behind) and
+# delete stray binaries, or build with `-femit-bin=/tmp/foo`.
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.pdb
+*.dSYM/
+*.wasm
+
+# Scratch files from trying out lesson code
+scratch/
+tmp/
+playground/
+*.tmp
+*.out
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+._*
+
+# Editors
+*.swp
+*.swo
+*~
+.idea/
+
+_reference
+.vscode

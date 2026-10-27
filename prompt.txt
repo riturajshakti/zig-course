@@ -1,0 +1,19 @@
+I want you to create a zig course for me.
+
+Here it should have modules folder and each with md files lessons
+
+also create an index.md file at root for list of all
+
+I am using zig 0.17.0 which is latest as of today, so you need to run each code to make sure it works as its library may change and break
+
+The tutorials should not have very long explanations that it break my learning motivation
+
+Instead I like the Dart Language Tour where it has programs and output so as to cover quick ideas of the language tour
+
+It would be better for you if you create a temporary folder for regular IO, syntax and other stuffs in this version of zig so that its faster to write most programs faster
+
+I have knowledge in few languages like Node.js, Go and Python and basics of Rust also, So I know good amount of coding but I am new to zig
+
+My goal is to take a job in Zig and to work in these fields in zig: System Design or Backend Developer
+
+Before you start you can write your doubts here in doubts.txt file, then only continue with the course
