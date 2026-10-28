@@ -178,64 +178,64 @@ Modules 1–5 in order; after that, jump around. ~5 min per lesson.
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 11.1 |  | [@cImport](modules/11-c-interop/01-cimport.md) | include C headers, call `printf`, link libc |
-| 11.2 |  | [C Types](modules/11-c-interop/02-c-types.md) | `c_int`, pointers, `[*c]T`, structs across the line |
-| 11.3 |  | [C Strings](modules/11-c-interop/03-c-strings.md) | `[:0]const u8` vs `[]const u8`, `span`, conversions |
-| 11.4 |  | [Linking Libraries](modules/11-c-interop/04-linking.md) | system libs in `build.zig`, compiling C sources |
-| 11.5 |  | [Exporting to C](modules/11-c-interop/05-exporting.md) | `export fn`, building a C-callable static library |
+| 11.1 | ✅ | [Calling C](modules/11-c-interop/01-calling-c.md) | **`@cImport` is gone** — `extern fn` + `-lc`, `std.c`, variadics, `translate-c` |
+| 11.2 | ✅ | [C Types](modules/11-c-interop/02-c-types.md) | `c_int`, pointers, `[*c]T`, structs across the line |
+| 11.3 | ✅ | [C Strings](modules/11-c-interop/03-c-strings.md) | `[:0]const u8` vs `[]const u8`, `span`, conversions |
+| 11.4 | ✅ | [Linking Libraries](modules/11-c-interop/04-linking.md) | system libs in `build.zig`, compiling C sources |
+| 11.5 | ✅ | [Exporting to C](modules/11-c-interop/05-exporting.md) | `export fn`, building a C-callable static library |
 
 ### [12 — Concurrency & Async](modules/12-concurrency-async/README.md) · 7 lessons
 *By the end: you can write concurrent servers.*
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 12.1 |  | [async & await](modules/12-concurrency-async/01-async-await.md) | `io.async`, `await`, how 0.17's model works |
-| 12.2 |  | [concurrent](modules/12-concurrency-async/02-concurrent.md) | `io.concurrent`, true parallelism vs concurrency |
-| 12.3 |  | [Cancellation](modules/12-concurrency-async/03-cancellation.md) | `Cancelable`, timeouts, cooperative shutdown |
-| 12.4 |  | [Threads](modules/12-concurrency-async/04-threads.md) | `std.Thread`, spawn & join, thread-per-task |
-| 12.5 |  | [Mutexes & Locks](modules/12-concurrency-async/05-mutexes.md) | `Mutex`, `RwLock`, protecting shared state |
-| 12.6 |  | [Atomics](modules/12-concurrency-async/06-atomics.md) | atomic counters, orderings, lock-free basics |
-| 12.7 |  | [Concurrent Echo Server](modules/12-concurrency-async/07-echo-server.md) | a TCP server handling many clients at once |
+| 12.1 | ✅ | [async & await](modules/12-concurrency-async/01-async-await.md) | `io.async`, `await`, how 0.17's model works |
+| 12.2 | ✅ | [concurrent](modules/12-concurrency-async/02-concurrent.md) | `io.concurrent`, true parallelism vs concurrency |
+| 12.3 | ✅ | [Cancellation](modules/12-concurrency-async/03-cancellation.md) | `Cancelable`, timeouts, cooperative shutdown |
+| 12.4 | ✅ | [Threads](modules/12-concurrency-async/04-threads.md) | `std.Thread`, spawn & join, thread-per-task |
+| 12.5 | ✅ | [Mutexes & Locks](modules/12-concurrency-async/05-mutexes.md) | `Mutex`, `RwLock`, protecting shared state |
+| 12.6 | ✅ | [Atomics](modules/12-concurrency-async/06-atomics.md) | atomic counters, orderings, lock-free basics |
+| 12.7 | ✅ | [Concurrent Echo Server](modules/12-concurrency-async/07-echo-server.md) | a TCP server handling many clients at once |
 
 ### [13 — Networking & HTTP](modules/13-networking-http/README.md) · 6 lessons
 *By the end: you can speak HTTP.*
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 13.1 |  | [Addresses & Sockets](modules/13-networking-http/01-addresses.md) | `std.Io.net`, `IpAddress`, DNS resolution |
-| 13.2 |  | [TCP Client](modules/13-networking-http/02-tcp-client.md) | `connect`, stream reader/writer, framing |
-| 13.3 |  | [TCP Server](modules/13-networking-http/03-tcp-server.md) | `listen`, `accept`, connection lifecycle |
-| 13.4 |  | [HTTP Client](modules/13-networking-http/04-http-client.md) | `std.http.Client`, GET/POST, headers, JSON bodies |
-| 13.5 |  | [HTTP Server](modules/13-networking-http/05-http-server.md) | `std.http.Server`, requests, responses, status codes |
-| 13.6 |  | [Serving JSON](modules/13-networking-http/06-serving-json.md) | content types, encoding structs, error responses |
+| 13.1 | ✅ | [Addresses & Sockets](modules/13-networking-http/01-addresses.md) | `std.Io.net`, `IpAddress`, DNS resolution |
+| 13.2 | ✅ | [TCP Client](modules/13-networking-http/02-tcp-client.md) | `connect`, stream reader/writer, framing |
+| 13.3 | ✅ | [TCP Server](modules/13-networking-http/03-tcp-server.md) | `listen`, `accept`, connection lifecycle |
+| 13.4 | ✅ | [HTTP Client](modules/13-networking-http/04-http-client.md) | `std.http.Client`, GET/POST, headers, JSON bodies |
+| 13.5 | ✅ | [HTTP Server](modules/13-networking-http/05-http-server.md) | `std.http.Server`, requests, responses, status codes |
+| 13.6 | ✅ | [Serving JSON](modules/13-networking-http/06-serving-json.md) | content types, encoding structs, error responses |
 
 ### [14 — Capstone: A JSON HTTP Service](modules/14-capstone-service/README.md) · 7 lessons 🎯
 *One real project, end to end. By the end: you have something to show an interviewer.*
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 14.1 |  | [Design & Layout](modules/14-capstone-service/01-design.md) | project structure, module boundaries, the API spec |
-| 14.2 |  | [Routing](modules/14-capstone-service/02-routing.md) | method + path dispatch, params, 404s |
-| 14.3 |  | [Per-Request Arena](modules/14-capstone-service/03-request-arena.md) | **the idiomatic server pattern** — arena per request |
-| 14.4 |  | [Store & State](modules/14-capstone-service/04-store.md) | shared state behind a mutex, CRUD handlers |
-| 14.5 |  | [Error Handling](modules/14-capstone-service/05-errors.md) | mapping Zig errors → HTTP status + JSON bodies |
-| 14.6 |  | [Config & Shutdown](modules/14-capstone-service/06-config-shutdown.md) | env config, signals, graceful shutdown |
-| 14.7 |  | [Tests & Release](modules/14-capstone-service/07-tests-release.md) | handler tests, load check, `ReleaseFast` build |
+| 14.1 | ✅ | [Design & Layout](modules/14-capstone-service/01-design.md) | project structure, module boundaries, the API spec |
+| 14.2 | ✅ | [Routing](modules/14-capstone-service/02-routing.md) | method + path dispatch, params, 404s |
+| 14.3 | ✅ | [Per-Request Arena](modules/14-capstone-service/03-request-arena.md) | **the idiomatic server pattern** — arena per request |
+| 14.4 | ✅ | [Store & State](modules/14-capstone-service/04-store.md) | shared state behind a mutex, CRUD handlers |
+| 14.5 | ✅ | [Error Handling](modules/14-capstone-service/05-errors.md) | mapping Zig errors → HTTP status + JSON bodies |
+| 14.6 | ✅ | [Config & Shutdown](modules/14-capstone-service/06-config-shutdown.md) | env config, signals, graceful shutdown |
+| 14.7 | ✅ | [Tests & Release](modules/14-capstone-service/07-tests-release.md) | handler tests, load check, `ReleaseFast` build |
 
 ### [15 — Zig for Systems & Backend Work](modules/15-systems-backend/README.md) · 9 lessons 💼
 *The job-hunting module. By the end: you can talk about Zig like someone who uses it.*
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 15.1 |  | [Idiomatic Zig](modules/15-systems-backend/01-idiomatic-zig.md) | what reviewers look for; naming & API conventions |
-| 15.2 |  | [Memory Layout](modules/15-systems-backend/02-memory-layout.md) | `@sizeOf`/`@alignOf`/`@offsetOf`, padding, **field reordering**, `packed` vs `extern` |
-| 15.3 |  | [Bits & Bytes](modules/15-systems-backend/03-bits-and-bytes.md) | `@bitCast`, `asBytes`, endianness, bit manipulation, binary protocols |
-| 15.4 |  | [Data-Oriented Design](modules/15-systems-backend/04-data-oriented.md) | `MultiArrayList`, SoA vs AoS, cache lines, why layout beats cleverness |
-| 15.5 |  | [Zero-Copy Parsing](modules/15-systems-backend/05-zero-copy.md) | slices into buffers, parsing with zero allocation |
-| 15.6 |  | [Syscalls & the OS](modules/15-systems-backend/06-syscalls.md) | `std.posix`, `mmap`, `uname`, rlimits, fds, what the OS actually gives you |
-| 15.7 |  | [Measuring Performance](modules/15-systems-backend/07-performance.md) | timing, benchmarking honestly, release modes, reading the machine |
-| 15.8 |  | [Zig vs C, Go & Rust](modules/15-systems-backend/08-zig-vs-others.md) | where Zig wins & loses; **answering "why Zig?"** |
-| 15.9 |  | [Interview Prep](modules/15-systems-backend/09-interview-prep.md) | real questions + answers, ecosystem state, what to build |
+| 15.1 | ✅ | [Idiomatic Zig](modules/15-systems-backend/01-idiomatic-zig.md) | what reviewers look for; naming & API conventions |
+| 15.2 | ✅ | [Memory Layout](modules/15-systems-backend/02-memory-layout.md) | `@sizeOf`/`@alignOf`/`@offsetOf`, padding, **field reordering**, `packed` vs `extern` |
+| 15.3 | ✅ | [Bits & Bytes](modules/15-systems-backend/03-bits-and-bytes.md) | `@bitCast`, `asBytes`, endianness, bit manipulation, binary protocols |
+| 15.4 | ✅ | [Data-Oriented Design](modules/15-systems-backend/04-data-oriented.md) | `MultiArrayList`, SoA vs AoS, cache lines, why layout beats cleverness |
+| 15.5 | ✅ | [Zero-Copy Parsing](modules/15-systems-backend/05-zero-copy.md) | slices into buffers, parsing with zero allocation |
+| 15.6 | ✅ | [Syscalls & the OS](modules/15-systems-backend/06-syscalls.md) | `std.posix`, `mmap`, `uname`, rlimits, fds, what the OS actually gives you |
+| 15.7 | ✅ | [Measuring Performance](modules/15-systems-backend/07-performance.md) | timing, benchmarking honestly, release modes, reading the machine |
+| 15.8 | ✅ | [Zig vs C, Go & Rust](modules/15-systems-backend/08-zig-vs-others.md) | where Zig wins & loses; **answering "why Zig?"** |
+| 15.9 | ✅ | [Interview Prep](modules/15-systems-backend/09-interview-prep.md) | real questions + answers, ecosystem state, what to build |
 
 ---
 
