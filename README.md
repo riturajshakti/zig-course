@@ -118,60 +118,60 @@ Modules 1–5 in order; after that, jump around. ~5 min per lesson.
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 6.1 |  | [comptime Basics](modules/06-comptime-generics/01-comptime-basics.md) | compile-time execution, `comptime` vars, asserts |
-| 6.2 |  | [Types Are Values](modules/06-comptime-generics/02-types-are-values.md) | `type` as a value — generics are just functions |
-| 6.3 |  | [Generic Functions](modules/06-comptime-generics/03-generic-functions.md) | `comptime T: type`, `anytype`, duck typing |
-| 6.4 |  | [Generic Containers](modules/06-comptime-generics/04-generic-containers.md) | write your own `Stack(T)`, like `ArrayList` does |
-| 6.5 |  | [Reflection](modules/06-comptime-generics/05-reflection.md) | `@typeInfo`, `inline for` over fields, auto-serialization |
-| 6.6 |  | [comptime Costs](modules/06-comptime-generics/06-costs.md) | code bloat, compile times, when *not* to be generic |
+| 6.1 | ✅ | [comptime Basics](modules/06-comptime-generics/01-comptime-basics.md) | compile-time execution, `comptime` vars, asserts |
+| 6.2 | ✅ | [Types Are Values](modules/06-comptime-generics/02-types-are-values.md) | `type` as a value — generics are just functions |
+| 6.3 | ✅ | [Generic Functions](modules/06-comptime-generics/03-generic-functions.md) | `comptime T: type`, `anytype`, duck typing |
+| 6.4 | ✅ | [Generic Containers](modules/06-comptime-generics/04-generic-containers.md) | write your own `Stack(T)`, like `ArrayList` does |
+| 6.5 | ✅ | [Reflection](modules/06-comptime-generics/05-reflection.md) | `@typeInfo`, `inline for` over fields, auto-serialization |
+| 6.6 | ✅ | [comptime Costs](modules/06-comptime-generics/06-costs.md) | code bloat, compile times, when *not* to be generic |
 
 ### [07 — Standard Library Tour](modules/07-stdlib-tour/README.md) · 7 lessons
 *Everyday data work. Container lessons cover every operation on each type — built to come back to.*
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 7.1 |  | [ArrayList](modules/07-stdlib-tour/01-arraylist.md) | **unmanaged in 0.17** — append, insert, remove, pop, iterate, sort, clear, toOwnedSlice |
-| 7.2 |  | [HashMap](modules/07-stdlib-tour/02-hashmap.md) | put, get, remove, contains, getOrPut, iterate, count, keys/values, clear |
-| 7.3 |  | [std.mem](modules/07-stdlib-tour/03-std-mem.md) | `eql`, `splitScalar`, `tokenizeScalar`, `join`, `indexOf` |
-| 7.4 |  | [Sorting & Search](modules/07-stdlib-tour/04-sorting.md) | `std.sort.pdq`, custom comparators, binary search |
-| 7.5 |  | [Formatting](modules/07-stdlib-tour/05-formatting.md) | format specifiers, `allocPrint`, `bufPrint`, custom `format` |
-| 7.6 |  | [JSON](modules/07-stdlib-tour/06-json.md) | parse to a struct, stringify, dynamic values |
-| 7.7 |  | [Time & Random](modules/07-stdlib-tour/07-time-random.md) | timestamps, measuring duration, PRNG seeding |
+| 7.1 | ✅ | [ArrayList](modules/07-stdlib-tour/01-arraylist.md) | **unmanaged in 0.17** — append, insert, remove, pop, iterate, sort, clear, toOwnedSlice |
+| 7.2 | ✅ | [HashMap](modules/07-stdlib-tour/02-hashmap.md) | put, get, remove, contains, getOrPut, iterate, count, keys/values, clear |
+| 7.3 | ✅ | [std.mem](modules/07-stdlib-tour/03-std-mem.md) | `eql`, `splitScalar`, `tokenizeScalar`, `join`, `indexOf` |
+| 7.4 | ✅ | [Sorting & Search](modules/07-stdlib-tour/04-sorting.md) | `std.sort.pdq`, custom comparators, binary search |
+| 7.5 | ✅ | [Formatting](modules/07-stdlib-tour/05-formatting.md) | format specifiers, `allocPrint`, `bufPrint`, custom `format` |
+| 7.6 | ✅ | [JSON](modules/07-stdlib-tour/06-json.md) | parse to a struct, stringify, dynamic values |
+| 7.7 | ✅ | [Time & Random](modules/07-stdlib-tour/07-time-random.md) | timestamps, measuring duration, PRNG seeding |
 
 ### [08 — Files & I/O](modules/08-files-io/README.md) · 6 lessons
 *By the end: you can write real CLI tools.*
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 8.1 |  | [The std.Io Model](modules/08-files-io/01-io-model.md) | why `io` is explicit, `Threaded` vs `Evented` |
-| 8.2 |  | [Readers & Writers](modules/08-files-io/02-readers-writers.md) | the `.interface` pattern, buffering, **`flush()`** |
-| 8.3 |  | [Reading Files](modules/08-files-io/03-reading-files.md) | `readFileAlloc` with `.limited()`, line-by-line streaming |
-| 8.4 |  | [Writing Files](modules/08-files-io/04-writing-files.md) | `writeFile`, create/append, atomic replace |
-| 8.5 |  | [Directories](modules/08-files-io/05-directories.md) | `std.Io.Dir`, walking trees, stat, paths |
-| 8.6 |  | [CLI Programs](modules/08-files-io/06-cli-programs.md) | args, stdin, env vars, exit codes |
+| 8.1 | ✅ | [The std.Io Model](modules/08-files-io/01-io-model.md) | why `io` is explicit, `Threaded` vs `Evented` |
+| 8.2 | ✅ | [Readers & Writers](modules/08-files-io/02-readers-writers.md) | the `.interface` pattern, buffering, **`flush()`** |
+| 8.3 | ✅ | [Reading Files](modules/08-files-io/03-reading-files.md) | `readFileAlloc` with `.limited()`, line-by-line streaming |
+| 8.4 | ✅ | [Writing Files](modules/08-files-io/04-writing-files.md) | `writeFile`, create/append, atomic replace |
+| 8.5 | ✅ | [Directories](modules/08-files-io/05-directories.md) | `std.Io.Dir`, walking trees, stat, paths |
+| 8.6 | ✅ | [CLI Programs](modules/08-files-io/06-cli-programs.md) | args, stdin, env vars, exit codes |
 
 ### [09 — Testing & Debugging](modules/09-testing-debugging/README.md) · 5 lessons
 *By the end: your code is verifiable.*
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 9.1 |  | [Writing Tests](modules/09-testing-debugging/01-writing-tests.md) | `test {}` blocks, `zig test`, naming |
-| 9.2 |  | [Assertions](modules/09-testing-debugging/02-assertions.md) | `expectEqual`, `expectEqualStrings`, `expectError` |
-| 9.3 |  | [testing.allocator](modules/09-testing-debugging/03-testing-allocator.md) | **a leak fails the test** — free memory-safety checking |
-| 9.4 |  | [Debugging](modules/09-testing-debugging/04-debugging.md) | `std.log` levels, panics, stack traces, `lldb` |
-| 9.5 |  | [Release Modes](modules/09-testing-debugging/05-release-modes.md) | how Debug/ReleaseSafe/ReleaseFast change *behavior* |
+| 9.1 | ✅ | [Writing Tests](modules/09-testing-debugging/01-writing-tests.md) | `test {}` blocks, `zig test`, naming |
+| 9.2 | ✅ | [Assertions](modules/09-testing-debugging/02-assertions.md) | `expectEqual`, `expectEqualStrings`, `expectError` |
+| 9.3 | ✅ | [testing.allocator](modules/09-testing-debugging/03-testing-allocator.md) | **a leak fails the test** — free memory-safety checking |
+| 9.4 | ✅ | [Debugging](modules/09-testing-debugging/04-debugging.md) | `std.log` levels, panics, stack traces, `lldb` |
+| 9.5 | ✅ | [Release Modes](modules/09-testing-debugging/05-release-modes.md) | how Debug/ReleaseSafe/ReleaseFast change *behavior* |
 
 ### [10 — Build System & Cross-Compilation](modules/10-build-system/README.md) · 6 lessons
 *By the end: you can ship a binary.*
 
 | # | Done | Lesson | What you learn |
 |---|---|---|---|
-| 10.1 |  | [build.zig](modules/10-build-system/01-build-zig.md) | the build graph, `addExecutable`, `zig build` |
-| 10.2 |  | [Steps & Options](modules/10-build-system/02-steps-options.md) | `zig build run`/`test`, custom steps, `-D` options |
-| 10.3 |  | [Modules](modules/10-build-system/03-modules.md) | splitting code into files and modules, imports |
-| 10.4 |  | [Dependencies](modules/10-build-system/04-dependencies.md) | `build.zig.zon`, fetching packages, hashes |
-| 10.5 |  | [Cross-Compilation](modules/10-build-system/05-cross-compilation.md) | **Mac → Linux in one flag** — Zig's headline feature |
-| 10.6 |  | [Shipping](modules/10-build-system/06-shipping.md) | static binaries, size tuning, Docker-free deploys |
+| 10.1 | ✅ | [build.zig](modules/10-build-system/01-build-zig.md) | the build graph, `addExecutable`, `zig build` |
+| 10.2 | ✅ | [Steps & Options](modules/10-build-system/02-steps-options.md) | `zig build run`/`test`, custom steps, `-D` options |
+| 10.3 | ✅ | [Modules](modules/10-build-system/03-modules.md) | splitting code into files and modules, imports |
+| 10.4 | ✅ | [Dependencies](modules/10-build-system/04-dependencies.md) | `build.zig.zon`, fetching packages, hashes |
+| 10.5 | ✅ | [Cross-Compilation](modules/10-build-system/05-cross-compilation.md) | **Mac → Linux in one flag** — Zig's headline feature |
+| 10.6 | ✅ | [Shipping](modules/10-build-system/06-shipping.md) | static binaries, size tuning, Docker-free deploys |
 
 ### [11 — C Interop](modules/11-c-interop/README.md) · 5 lessons
 *By the end: you can use the entire C ecosystem.*
